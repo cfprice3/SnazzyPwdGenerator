@@ -19,7 +19,7 @@ else {
 //  If/Else statements based on user response that assign value to 'characters' used in generate function 
 
 //  ------------------------------LowerCase--------------------------------------
-var pwLower = confirm("Do you want to include lower case characters?");
+var pwLower = confirm("Do you want to include Lower Case Characters?");
 if (pwLower === true){ 
    (characters += charLower);
    alert("You chose to include Lower Case Characters")
