@@ -15,40 +15,42 @@ else {
     alert("You chose " + pwLength + " characters long.");
 }
 
-//  List of booleans to ask which properties the user wants in the pw. (upper case, lower case, numbers and symbols) 
-    var pwLower = confirm("Do you want to include lower case characters?");
-    var pwUpper = confirm("Do you want to include upper case characters?");
-    var pwNum = confirm("Do you want to include numbers?");
-    var pwSym = confirm("Do you want to include special characters?");
-
+//  List of booleans to ask which properties the user wants in the pw. (upper case, lower case, numbers and symbols)
 //  If/Else statements based on user response that assign value to 'characters' used in generate function 
 
 //  ------------------------------LowerCase--------------------------------------
+var pwLower = confirm("Do you want to include lower case characters?");
 if (pwLower === true){ 
    (characters += charLower);
+   alert("You chose to include Lower Case characters")
 }
 else{ ("");
 }    
 
 //--------------------------------UpperCase--------------------------------------
+var pwUpper = confirm("Do you want to include upper case characters?");
 if (pwUpper === true){ 
    (characters += charUpper);
+   alert("You chose to include Upper Case characters")
 }
 else{ ("");    
 }    
 
 //---------------------------------Numbers---------------------------------------
+var pwNum = confirm("Do you want to include numbers?");
 if (pwNum === true){ 
    (characters += num);
+   alert("You chose to include Numbers")
 }
 else{ ("");    
 }    
 
 //---------------------------------Symbols---------------------------------------
+var pwSym = confirm("Do you want to include special characters?");
 if (pwSym === true){ 
    (characters += sym);
+   alert("You chose to include Symbols")
 }
-
 else{ ("");
 }
 
