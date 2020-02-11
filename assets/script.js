@@ -54,6 +54,8 @@ if (pwSym === true){
 else{ ("");
 }
 
+//  alert to instruct the user to click the btn to show their generated pw
+alert("Click the Generate Password button for your new password!")
 
 // Password generator function which randomly selects characters
 function generatePassword(pwLength,characters){
