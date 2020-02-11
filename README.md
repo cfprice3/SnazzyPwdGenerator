@@ -1,0 +1,5 @@
+For this project we had to create javascript that would create a randomized password.  We had to have alerts and prompts to ask the user: how many characters (8-128) they wanted the password, if they wanted to use uppercase chars, lower case chars, and special cars/symbols.  One the user made their choices the page was then supposed to take that input and then generate a random password everytime the button was clicked, and display in the text box.
+
+The hardest part of the project was creating all the functions to do exactly what you needed them.  It was easy for me to create the alerts and prompts with the if/else variables.  However, I am still learning how to utilize functions correctly, I did have difficulty getting them to do what I wanted them to do.  Using charAt and the Math.floor(Math.random) made sense, but making all the functions flow,  interact, and effect one another proved difficult.  
+
+My biggest hurdle was wrapping my if/else statements in a curly bracket inside of one of my functions, and it kept giving me extra text in the text box with the code.  When that was discovered, the code executed as expected.
