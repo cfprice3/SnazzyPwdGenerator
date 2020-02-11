@@ -22,35 +22,61 @@ else {
     var pwSym = confirm("Do you want to include special characters?");
 
 //  If/Else statements based on user response that assign value to 'characters' used in generate function 
-    if (pwLower === true){ 
-        (characters += charLower);
+
+//  ------------------------------LowerCase--------------------------------------
+if (pwLower === true){ 
+   (characters += charLower);
 }
-    else{ ("");
+else{ ("");
 }    
 
-    if (pwUpper === true){ 
-        (characters += charUpper);
+//--------------------------------UpperCase--------------------------------------
+if (pwUpper === true){ 
+   (characters += charUpper);
 }
-    else{ ("");    
+else{ ("");    
 }    
-    if (pwNum === true){ 
-        (characters += num);
+
+//---------------------------------Numbers---------------------------------------
+if (pwNum === true){ 
+   (characters += num);
 }
-    else{ ("");    
+else{ ("");    
 }    
-    if (pwSym === true){ 
-        (characters += sym);
+
+//---------------------------------Symbols---------------------------------------
+if (pwSym === true){ 
+   (characters += sym);
 }
-    else{ ("");
+
+else{ ("");
 }
+
 
 // Password generator function which randomly selects characters
 function generatePassword(pwLength,characters){
     password = "";
     for (var i = 0; i < pwLength; i++){
         password += characters.charAt(Math.floor(Math.random() * characters.length));
-        
     }
     return password;
 }
+
+//console log to check to make sure function works properly
 console.log(generatePassword(pwLength,characters));
+
+// Write password to the #password input
+function writePassword(myPassword) {
+    var passwordText = document.querySelector("#password");
+    passwordText.value = myPassword;
+} 
+
+//  Function to display password by assigning value to 'password' through other functions.
+function showPassword(){
+    var password = generatePassword(pwLength,characters);
+    writePassword(password);
+}
+
+//  Click event. When user clicks 'generate pw btn' this will use responses from if/else statements 
+//  and writePassword function to generate pw.
+generateBtn.addEventListener("click", showPassword);
