@@ -43,22 +43,14 @@ else {
 }
     else{ ("");
 }
-  
 
-
-
-
-
-
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
+// Password generator function which randomly selects characters
+function generatePassword(pwLength,characters){
+    password = "";
+    for (var i = 0; i < pwLength; i++){
+        password += characters.charAt(Math.floor(Math.random() * characters.length));
+        
+    }
+    return password;
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+console.log(generatePassword(pwLength,characters));
