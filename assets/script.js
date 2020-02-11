@@ -22,22 +22,22 @@ else {
 var pwLower = confirm("Do you want to include lower case characters?");
 if (pwLower === true){ 
    (characters += charLower);
-   alert("You chose to include Lower Case characters")
+   alert("You chose to include Lower Case Characters")
 }
 else{ ("");
 }    
 
 //--------------------------------UpperCase--------------------------------------
-var pwUpper = confirm("Do you want to include upper case characters?");
+var pwUpper = confirm("Do you want to include Upper Case Characters?");
 if (pwUpper === true){ 
    (characters += charUpper);
-   alert("You chose to include Upper Case characters")
+   alert("You chose to include Upper Case Characters")
 }
 else{ ("");    
 }    
 
 //---------------------------------Numbers---------------------------------------
-var pwNum = confirm("Do you want to include numbers?");
+var pwNum = confirm("Do you want to include Numbers?");
 if (pwNum === true){ 
    (characters += num);
    alert("You chose to include Numbers")
@@ -46,10 +46,10 @@ else{ ("");
 }    
 
 //---------------------------------Symbols---------------------------------------
-var pwSym = confirm("Do you want to include special characters?");
+var pwSym = confirm("Do you want to include Special Characters?");
 if (pwSym === true){ 
    (characters += sym);
-   alert("You chose to include Symbols")
+   alert("You chose to include Special Characters")
 }
 else{ ("");
 }
